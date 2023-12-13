@@ -4,6 +4,8 @@ format: html
 editor: visual
 ---
 
+[Home Page](https://paulopgw.github.io/website/Home.html) -[Git Hub](https://github.com/paulopgw)
+
 Together we will be creating an interactive county census from the ACS.
 
 First, we need to load the necessary programs that will help us complete our census.
