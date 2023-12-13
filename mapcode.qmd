@@ -41,5 +41,3 @@ mapview(ma_counties_withgeo, zcol = "medincomeE",
         popup = mypopup)
       
 ```
-
-

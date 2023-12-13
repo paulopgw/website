@@ -72,4 +72,4 @@ Finally, to visualize the map with the labels, we need to tell it to use it in t
 
 `mapview(ma_counties_withgeo, zcol = "medincomeE", labels = mylabel, popup = mypopup)`
 
-To see the process and the finalized map, click [here](https://paulopgw.github.io/mywebsite/map.html)
+To see the process and the finalized map, click [here](https://paulopgw.github.io/website/mapcode.html)
