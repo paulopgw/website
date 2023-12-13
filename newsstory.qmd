@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-[*Home Page*](https://109c7fdfde49495f9a447f4665fac5f5.app.posit.cloud/p/e504267f/) - [*GitHub*](https://github.com/paulopgw/mywebsite)
+[*Home Page*](https://paulopgw.github.io/website/Home.html) - [*GitHub*](https://github.com/paulopgw)
 
 ## D.C Nightlife: How D.C Residents Navigate Lack of Late-Night Metro
 

@@ -39,5 +39,5 @@ mypopup <- glue::glue("County: {ma_counties_withgeo$NAME}<br>",
 mapview(ma_counties_withgeo, zcol = "medincomeE",
         labels = mylabel,
         popup = mypopup)
-      
+     
 ```
