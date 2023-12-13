@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-[*Home Page*](https://paulopgw.github.io/website/home.html) - [*GitHub*](https://github.com/paulopgw)
+[*Home Page*](https://paulopgw.github.io/website/Home.html) - [*GitHub*](https://github.com/paulopgw)
 
 # Hello! My name is Paulina Lopez.
 

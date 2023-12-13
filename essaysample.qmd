@@ -4,6 +4,8 @@ format: html
 editor: visual
 ---
 
+[*Home Page*](https://paulopgw.github.io/website/Home.html) - [*GitHub*](https://github.com/paulopgw)
+
 ## Freudian Analysis of The Little Mermaid
 
 By Paulina Lopez

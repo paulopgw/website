@@ -4,6 +4,8 @@ format: html
 editor: visual
 ---
 
+[*Home Page*](https://paulopgw.github.io/website/Home.html) - [*GitHub*](https://github.com/paulopgw)
+
 ## D.C Nightlife: How D.C Residents Navigate Lack of Late-Night Metro
 
 By Paulina Lopez
