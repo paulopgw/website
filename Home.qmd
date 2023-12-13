@@ -1,0 +1,29 @@
+---
+title: "Home"
+format: html
+editor: visual
+---
+
+[*Home Page*](https://paulopgw.github.io/mywebsite/homepage.html) - [*GitHub*](https://github.com/paulopgw)
+
+# Hello! My name is Paulina Lopez.
+
+I am a recent college graduate from George Washington University. I have a bachelor degree in Organizational Science, and a minor in Journalism and Mass Communication.
+
+![](DSC02177%202.jpg)
+
+## [Essay Sample](https://paulopgw.github.io/mywebsite/essaysample.html)
+
+## [Interactive County Census](https://paulopgw.github.io/mywebsite/censusmap.html)
+
+## [News Story Sample](https://paulopgw.github.io/mywebsite/NewsStorySample.html)
+
+Contact Information:
+
+202-714-2638
+
+paulinalopezfe\@gmail.com
+
+## Resume
+
+[![](PaulinaLopezfelix_resume%20(1).pdf){fig-align="center"}](https://www.linkedin.com/in/paulina-lopez-a463671a2/) \##

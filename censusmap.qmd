@@ -1,0 +1,75 @@
+---
+title: "censusmap"
+format: html
+editor: visual
+---
+
+[*Home Page*](https://109c7fdfde49495f9a447f4665fac5f5.app.posit.cloud/p/3495f110/) - [*GitHub*](https://github.com/paulopgw/mywebsite)
+
+Together we will be creating an interactive county census from the ACS.
+
+First, we need to load the necessary programs that will help us complete our census.
+
+(Make sure your packages are downloaded first)
+
+`library(tidyverse)`
+
+`library(tidycensus)`
+
+`library(sf)`
+
+`library(htmltools)`
+
+`library(janitor)`
+
+`library(here)`
+
+`library(mapview)`
+
+`library(leafsync)`
+
+`library(leaflet.extras2)`
+
+Then, we need to set up an API Key in order to access the database for the data needed.
+
+To do this, access the following website:
+
+<https://api.census.gov/data/key_signup.html>
+
+After you receive your key in the mail, you will type in the following code:
+
+(Remember to place your key into "YOUR API KEY")
+
+`myapikey <- "YOUR API KEY"`
+
+`census_api_key(myapikey, overwrite=TRUE)`
+
+Now, we want to pull the data we want and rename it. In this case, we are looking for total population, median income, and median age. The numbers they equal to are the variable associated with the data we want to pull.
+
+`myvars <- c(totalpop = "B01003_001",`
+
+`medincome = "B19013_001",`
+
+`medage = "B01002_001")`
+
+Now, we look for the state we want, and what geographical feature. In this case, we want its counties, and we want its "geometry" data the program needs to create the map.
+
+`ma_counties_withgeo <- get_acs(geography = "county", variables = c(myvars), state = "MA", output = "wide", geometry = TRUE)`
+
+Finally, with different variables and the geographical data in place, we choose what we want the map to show. In this case, we want to see the median income, which in the table presented is named as "medincomeE".
+
+`mapview(ma_counties_withgeo, zcol = "medincomeE")`
+
+Now, if we want to label the map, we must use the following code.
+
+`mylabel <- glue::glue("County: {{ma_counties_withgeo$NAME}}<br>",  "Median Income: {{ma_counties_withgeo$medincomeE}}")`
+
+We want to also label the pop outs.
+
+`mypopup <- glue::glue("County: {ma_counties_withgeo$NAME}<br>",  "Median Income: {ma_counties_withgeo$medincomeE}")`
+
+Finally, to visualize the map with the labels, we need to tell it to use it in the final render:
+
+`mapview(ma_counties_withgeo, zcol = "medincomeE", labels = mylabel, popup = mypopup)`
+
+To see the process and the finalized map, click [here](https://paulopgw.github.io/mywebsite/map.html)
